@@ -1,5 +1,7 @@
 # AIly
-A bunch of AI notebooks 🤖 I'd worked on almost a daiLY basis 👨‍💻
+A bunch of Artificial Intelligence, Data Science or Data Analytics notebooks 🤖 I'd worked on almost a daiLY basis 👨‍💻
+
+## Ideas
 
 ## Tips
 
