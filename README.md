@@ -11,7 +11,7 @@ This directory might contain notes or outlines of potential data analysis or AI 
 </details>
 
 
-### [Rating System is not Credible Anymore So I Propose a New One](projects/Rating_System_is_not_Credible_Anymore_So_I_Propose_a_New_One.ipynb)
+### [WIP] [Rating System is not Credible Anymore So I Propose a New One](projects/Rating_System_is_not_Credible_Anymore_So_I_Propose_a_New_One.ipynb)
 
 Alternate rating system by factor people's feedback
 
@@ -40,5 +40,9 @@ Reading and understanding any documentation with minimum effort on Google Colab
 </summary>
 This directory might contain completed or ongoing data analysis or AI projects that I've worked on. These could be projects that I've done for work or personal interest, and could range from small scripts to large-scale projects.
 </details>
+
+### [Extract Smart Contract Address Using GraphQL API](projects/ethereum%20address/Extract_Smart_Contract_Address_Using_GraphQL_API.ipynb)
+
+Leveraging GraphQL API over web scraping: a backend approach
 
 [back to ⬆](#daily)
