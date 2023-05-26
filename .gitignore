@@ -1,2 +1,8 @@
+# Ignore configuration files
 *.ini
+
+# Ignore database files
 *.db
+
+# Ignore Python version files created by pyenv
+*.python-version
