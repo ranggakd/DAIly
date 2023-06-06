@@ -36,7 +36,7 @@ Reading and understanding any documentation with minimum effort on Google Colab
 This directory might contain completed or ongoing data analysis or AI projects that I've worked on. These could be projects that I've done for work or personal interest, and could range from small scripts to large-scale projects.
 </details>
 
-### [Extract Smart Contract Address Using GraphQL API](projects/ethereum%20address/Extract_Smart_Contract_Address_Using_GraphQL_API.ipynb)
+### [Extract Smart Contract Address Using GraphQL API](projects/ethereum_address/Extract_Smart_Contract_Address_Using_GraphQL_API.ipynb)
 
 Leveraging GraphQL API over web scraping: a backend approach
 
