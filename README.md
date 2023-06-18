@@ -8,9 +8,9 @@ A bunch of <b>D</b>ata Analysis and <b>A</b>rtificial <b>I</b>ntelligence notebo
 This directory might contain notes or outlines of potential data analysis or AI projects that I'm considering working on in the future. These might be in the form of brainstorming notebooks, rough outlines powerpoint of project ideas, or notes on interesting data sources or tools that I want to explore further.
 </details>
 
-<!-- ### [WIP] [Rating System is not Credible Anymore So I Propose a New One](projects/Rating_System_is_not_Credible_Anymore_So_I_Propose_a_New_One.ipynb)
+### [Goodbye Average Rating System Hello Helpful Rating System](ideas/helpful_rating_system/Goodbye_Average_Rating_System_Hello_Helpful_Rating_System.ipynb)
 
-Alternate rating system by factor people's feedback -->
+Redefining the average rating system by factoring in people's feedback
 
 [back to ⬆](#daily)
 
