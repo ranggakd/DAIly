@@ -6,3 +6,33 @@
 
 # Ignore Python version files created by pyenv
 *.python-version
+
+# Ignore Microsoft Excel files
+
+# Excel spreadsheets
+*.xls
+*.xlsx
+
+# Excel temp files
+~$*.xls*
+~*.xlsx
+
+# Excel Add-In Files
+*.xlam
+*.xll
+*.xla
+*.xlt
+*.xlw
+
+# Excel macro-enabled workbook files
+*.xlsm
+
+# Excel binary workbook files
+*.xlsb
+
+# Excel older versions
+*.xla
+*.xlt
+*.xlm
+*.xlw
+*.xlc
