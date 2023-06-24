@@ -1,0 +1,47 @@
+# Run ipynb kernel
+ipykernel
+
+# Library to save and load parquet files
+pyarrow
+
+# Another library to handle parquet files
+fastparquet
+
+# Library to handle Twitter's API
+tweepy
+
+# Library to handle rate limits when using APIs
+backoff
+
+# Library to programmatically label data
+snorkel
+
+# Libraries for working with transformer models and translations
+transformers
+sentencepiece
+sacremoses
+
+# Libraries for data manipulation and processing
+numpy
+pandas
+
+# Library for generating plots and visualizations
+matplotlib
+
+# Library to handle progress bars in a Python environment
+tqdm
+ipywidgets
+
+# Library to handle HTTP requests
+requests
+
+# CPU-only PyTorch - avoid CUDA
+--find-links https://download.pytorch.org/whl/cpu
+torch==2.0.1
+torchaudio==2.0.2+cpu
+torchvision==0.15.2+cpu
+
+# uncomment this for GPU CUDA version of PyTorch
+# torch
+# torchvision
+# torchaudio
