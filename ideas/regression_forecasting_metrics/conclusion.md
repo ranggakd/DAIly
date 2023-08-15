@@ -16,15 +16,15 @@
 
 #### Percentage Error (PE) Categorization
 
-| Category          | Error Magnitude (Abs) | Direction |
+| Category          | Error Magnitude (%) | Direction |
 |-------------------|-----------------------|-----------|
 | Perfect           | Exactly 0%            | -         |
-| Very Acceptable   | $0\% < x \leq 5\%$    | Over/Under|
-| Acceptable        | $5\% < x \leq 10\%$   | Over/Under|
-| Moderate          | $10\% < x \leq 20\%$  | Over/Under|
-| High              | $20\% < x \leq 30\%$  | Over/Under|
-| Very High         | $30\% < x \leq 100\%$ | Over/Under|
-| Exceedingly High  | $x > 100\%$           | Over/Under|
+| Very Acceptable   | $0 < x \leq 5$    | Over/Under|
+| Acceptable        | $5 < x \leq 10$   | Over/Under|
+| Moderate          | $10 < x \leq 20$  | Over/Under|
+| High              | $20 < x \leq 30$  | Over/Under|
+| Very High         | $30 < x \leq 100$ | Over/Under|
+| Exceedingly High  | $x > 100$           | Over/Under|
 
 #### R2 Score Categorization
 
