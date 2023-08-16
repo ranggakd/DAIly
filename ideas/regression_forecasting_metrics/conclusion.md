@@ -93,7 +93,7 @@
 > 1. This experiment is not intended to serve as a rule of thumb or a best practice. Instead, it offers a glimpse into how different metrics behave on controlled models and datasets to foster a deeper understanding.
 > 1. **Use insights from this exploration at your own risk.**
 
-| Plot | Based on | Variant | Dataset | Model | R2 | MAE | MSE | RMSE | MASE | MAPE | sMAPE | MBD  |
+| Plot | Based on | Variant | Dataset | Model | R2 | MAE | MSE | RMSE | MASE | MAPE | sMAPE | MBDev |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|
 |[📊]()| Test Size | Small=1 | $\cos(x)$ | AutoReg |🙅‍♂️|👌|👌|👌|🤬|👌📈|👌📈|👌📈|
 |[📊]()| | | | OffsetModel |🙅‍♂️|👌|👌|👌|🤬|👌📈|👌📈|👌📈|
