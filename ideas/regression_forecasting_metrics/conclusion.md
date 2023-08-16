@@ -1,6 +1,11 @@
 ## Summary
 
-### Boundaries
+<details>
+    <summary>
+<h3>Boundaries</h3>
+    </summary>
+
+> **Disclaimer:** These boundaries are user-defined. They may vary based on different context.
 
 #### Standard Error Metrics (MAE, MSE, RMSE) Categorization
 
@@ -11,8 +16,8 @@
 | Acceptable         | $0.05 < x \leq 0.1$   |
 | Moderate           | $0.1 < x \leq 0.2$    |
 | High               | $0.2 < x \leq 0.3$    |
-| Very High          | $0.3 < x \leq 1.0$    |
-| Exceedingly High   | $x > 1.0$             |
+| Very High          | $0.3 < x \leq 1$    |
+| Exceedingly High   | $x > 1$             |
 
 #### Percentage Error (PE) Categorization
 
@@ -37,7 +42,7 @@
 | High                               | $0.7 \leq x < 0.8$|
 | Very High                          | $0.5 \leq x < 0.7$|
 | Exceedingly High                   | $0 < x < 0.5$   |
-| Doesn't Explain Variability        | Exactly 0         |
+| Doesn't Explain Variability        | Exactly 0       |
 | Worse Than Simple Mean Model       | $x < 0$         |
 
 #### MASE Categorization
@@ -49,8 +54,9 @@
 | Acceptable         | $0.05 < x \leq 0.1$|
 | Moderate           | $0.1 < x \leq 0.2$|
 | High               | $0.2 < x \leq 0.3$|
-| Very High          | $0.3 < x \leq 1.0$|
-| Worse Than Naive Forecast Model | $x > 1.0$ |
+| Very High          | $0.3 < x \leq 1$|
+| Worse Than Naive Forecast Model | $x > 1$ |
+</details>
 
 ### Severity Emojis:
 
@@ -81,19 +87,20 @@
 
 | Based on | Variant | Dataset | Model | R2 | MAE | MSE | RMSE | MASE | MAPE | sMAPE | MBD |
 |--|--|--|--|--|--|--|--|--|--|--|--|
-| Test Size | Small=1 | Sin | AutoReg |🙅‍♂️|👌|👌|👌|🤬|👌📈|👌📈|👌📈|
-| | | | OffsetModel |--|--|--|--|--|--|--|--|
-| | | Cos | AutoReg |--|--|--|--|--|--|--|--|
-| | | | OffsetModel |--|--|--|--|--|--|--|--|
-| Test Size | Small=2 | Sin | AutoReg |🛑|👌|👌|👌|🤬|👌📈|👌📈|👌📈|
-| | | | OffsetModel |--|--|--|--|--|--|--|--|
-| | | Cos | AutoReg |--|--|--|--|--|--|--|--|
-| | | | OffsetModel |--|--|--|--|--|--|--|--|
-| Test Size | Mid | Sin | AutoReg |🛑|👌|👌|👌|🤬|👌📈|👌📈|👌📈|
-| | | | OffsetModel |--|--|--|--|--|--|--|--|
-| | | Cos | AutoReg |--|--|--|--|--|--|--|--|
-| | | | OffsetModel |--|--|--|--|--|--|--|--|
-| Test Size | Large | Sin | AutoReg |🛑|❗|✔️|❌|🤬|👌📈|❌📈|💀📈|
-| | | | OffsetModel |--|--|--|--|--|--|--|--|
-| | | Cos | AutoReg |--|--|--|--|--|--|--|--|
-| | | | OffsetModel |--|--|--|--|--|--|--|--|
+| Test Size | Small=1 | Cos | AutoReg |🙅‍♂️|👌|👌|👌|🤬|👌📈|👌📈|👌📈|
+| | | | OffsetModel |🙅‍♂️|👌|👌|👌|🤬|👌📈|👌📈|👌📈|
+| | | Sin | AutoReg |🙅‍♂️|👌|👌|👌|🤬|☠📈|☠📈|☠📉|
+| | | | OffsetModel |🙅‍♂️|👌|👌|👌|🤬|☠📈|☠📈|☠📈|
+| Test Size | Small=2 | Cos | AutoReg |🛑|👌|👌|👌|🤬|👌📈|👌📈|👌📈|
+| | | | OffsetModel |🛑|👌|👌|👌|🤬|👌📈|👌📈|👌📈|
+| | | Sin | AutoReg |🛑|👌|👌|👌|🤬|☠📈|☠📈|☠📉|
+| | | | OffsetModel |🛑|👌|👌|👌|🤬|☠📈|☠📈|☠📈|
+| Test Size | Mid | Cos | AutoReg |🛑|👌|👌|👌|🤬|👌📈|👌📈|👌📈|
+| | | | OffsetModel |🛑|👌|👌|👌|🤬|👌📈|👌📈|👌📈|
+| | | Sin | AutoReg |🛑|👌|👌|👌|🤬|☠📈|💀📈|☠📉|
+| | | | OffsetModel |🛑|👌|👌|👌|🤬|☠📈|☠📈|☠📈|
+| Test Size | Large | Cos | AutoReg |🛑|❗|✔️|❌|🤬|👌📈|❌📈|💀📈|
+| | | | OffsetModel |❗|👌|👌|👌|🤬|👌📈|👌📈|👌📈|
+| | | Sin | AutoReg |🛑|❌|❗|❌|🤬|☠📈|💀📈|☠📉|
+| | | | OffsetModel |👌|👌|👌|👌|🤬|☠📈|❗📈|☠📈|
+| Number Nature | Non-zero Real Numbers | Cos | AutoReg |🛑|❗|✔️|❌|🤬|👌📈|❌📈|💀📈|
