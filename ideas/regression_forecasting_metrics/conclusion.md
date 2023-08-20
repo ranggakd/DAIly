@@ -146,6 +146,33 @@
 |[📊]()| | | | OffsetModel 5000% |🛑|☠|☠|☠|🤬|💀|☠|☠📈|
 |[📊]()| |  | $10 \cdot \sin(x) + 21$ | OffsetModel 500% |🛑|☠|☠|☠|🤬|✔️|☠|☠📈|
 |[📊]()| | | | OffsetModel 5000% |🛑|☠|☠|☠|🤬|💀|☠|☠📈|
+|[📊]()| Data Distribution and Patterns | Linear Trend | $5x + 2$ | AutoReg |||||||||
+|[📊]()| | | | OffsetModel |||||||||
+|[📊]()| |  | $-5x + 2$ | AutoReg |||||||||
+|[📊]()| | | | OffsetModel |||||||||
+|[📊]()| | Exponential Growth / Decay | $2e^{0.5x}$ | AutoReg |||||||||
+|[📊]()| | | | OffsetModel |||||||||
+|[📊]()| |  | $2e^{-0.5x}$ | AutoReg |||||||||
+|[📊]()| | | | OffsetModel |||||||||
+|[📊]()| | Quadratic Trend | $x^2$ | AutoReg |||||||||
+|[📊]()| | | | OffsetModel |||||||||
+|[📊]()| |  | $-x^2$ | AutoReg |||||||||
+|[📊]()| | | | OffsetModel |||||||||
+|[📊]()| | Logarithmic Trend | $10 + 5\ln(x+1)$ | AutoReg |||||||||
+|[📊]()| | | | OffsetModel |||||||||
+|[📊]()| |  | $10 - 5\ln(x+1)$ | AutoReg |||||||||
+|[📊]()| | | | OffsetModel |||||||||
+|[📊]()| | Sigmoidal/Logistic Trend | $\frac{10}{1 + e^{-x + 5}}$ | AutoReg |||||||||
+|[📊]()| | | | OffsetModel |||||||||
+|[📊]()| |  | $-\frac{10}{1 + e^{-x + 5}}$ | AutoReg |||||||||
+|[📊]()| | | | OffsetModel |||||||||
+|[📊]()| | Seasonality | $20 \cdot \cos(4x) + 50$ | AutoReg |||||||||
+|[📊]()| | | | OffsetModel |||||||||
+|[📊]()| | Outliers | $\begin{cases} \sin(x) & \text{if } \vert\sin(x)\vert \leq 0.99 \\ 100\sin(x) & \text{if } \vert\sin(x)\vert > 0.99 \end{cases}$ | AutoReg |||||||||
+|[📊]()| | | | OffsetModel |||||||||
+|[📊]()| | Repeated Patterns | $(x \mod 5) + 1$ | AutoReg |||||||||
+|[📊]()| | | | OffsetModel |||||||||
+
 
 https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s1_cos_ar.html
 https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s1_cos_om.html
