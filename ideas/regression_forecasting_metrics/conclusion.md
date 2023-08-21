@@ -169,7 +169,7 @@
 |[📊]()| | Seasonality | $20 \cdot \cos(4x) + 50$ | AutoReg |🛑|❗|☠|❌|🤬|👌|❌|❗📉|
 |[📊]()| | | | OffsetModel |👌|👌|👌|👌|✔️|👌|👌|👌📈|
 |[📊]()| | Outliers | $\begin{cases} \sin(x) & \text{if } \vert\sin(x)\vert \leq 0.99 \\ 1000\sin(x) & \text{if } \vert\sin(x)\vert > 0.99 \end{cases}$ | AutoReg |🛑|❗|☠|❗|🤬|☠|☠|☠📉|
-|[📊]()| | Outliers | ![outliers math func](assets/outliers.png) | AutoReg |🛑|❗|☠|❗|🤬|☠|☠|☠📉|
+|[📊]()| | Outliers | ![outliers math func](https://raw.githubusercontent.com/ranggakd/DAIly/main/ideas/regression_forecasting_metrics/assets/outliers.png) | AutoReg |🛑|❗|☠|❗|🤬|☠|☠|☠📉|
 |[📊]()| | Outliers | $$\begin{cases} \sin(x) & \text{if } \vert\sin(x)\vert \leq 0.99 \\ 1000\sin(x) & \text{if } \vert\sin(x)\vert > 0.99 \end{cases}$$ | AutoReg |🛑|❗|☠|❗|🤬|☠|☠|☠📉|
 |[📊]()| | | | OffsetModel |👌|👌|❌|👌|✔️|☠|☠|☠📈|
 |[📊]()| | Repeated Patterns | $(x \mod 5) + 1$ | AutoReg |🛑|💀|💀|💀|❗|👌|💀|💀📈|
