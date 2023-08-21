@@ -146,33 +146,38 @@
 |[📊]()| | | | OffsetModel 5000% |🛑|☠|☠|☠|🤬|💀|☠|☠📈|
 |[📊]()| |  | $10 \cdot \sin(x) + 21$ | OffsetModel 500% |🛑|☠|☠|☠|🤬|✔️|☠|☠📈|
 |[📊]()| | | | OffsetModel 5000% |🛑|☠|☠|☠|🤬|💀|☠|☠📈|
-|[📊]()| Data Distribution and Patterns | Linear Trend | $5x + 2$ | AutoReg |||||||||
-|[📊]()| | | | OffsetModel |||||||||
-|[📊]()| |  | $-5x + 2$ | AutoReg |||||||||
-|[📊]()| | | | OffsetModel |||||||||
-|[📊]()| | Exponential Growth / Decay | $2e^{0.5x}$ | AutoReg |||||||||
-|[📊]()| | | | OffsetModel |||||||||
-|[📊]()| |  | $2e^{-0.5x}$ | AutoReg |||||||||
-|[📊]()| | | | OffsetModel |||||||||
-|[📊]()| | Quadratic Trend | $x^2$ | AutoReg |||||||||
-|[📊]()| | | | OffsetModel |||||||||
-|[📊]()| |  | $-x^2$ | AutoReg |||||||||
-|[📊]()| | | | OffsetModel |||||||||
-|[📊]()| | Logarithmic Trend | $10 + 5\ln(x+1)$ | AutoReg |||||||||
-|[📊]()| | | | OffsetModel |||||||||
-|[📊]()| |  | $10 - 5\ln(x+1)$ | AutoReg |||||||||
-|[📊]()| | | | OffsetModel |||||||||
-|[📊]()| | Sigmoidal/Logistic Trend | $\frac{10}{1 + e^{-x + 5}}$ | AutoReg |||||||||
-|[📊]()| | | | OffsetModel |||||||||
-|[📊]()| |  | $-\frac{10}{1 + e^{-x + 5}}$ | AutoReg |||||||||
-|[📊]()| | | | OffsetModel |||||||||
-|[📊]()| | Seasonality | $20 \cdot \cos(4x) + 50$ | AutoReg |||||||||
-|[📊]()| | | | OffsetModel |||||||||
-|[📊]()| | Outliers | $\begin{cases} \sin(x) & \text{if } \vert\sin(x)\vert \leq 0.99 \\ 100\sin(x) & \text{if } \vert\sin(x)\vert > 0.99 \end{cases}$ | AutoReg |||||||||
-|[📊]()| | | | OffsetModel |||||||||
-|[📊]()| | Repeated Patterns | $(x \mod 5) + 1$ | AutoReg |||||||||
-|[📊]()| | | | OffsetModel |||||||||
-
+|[📊]()| Data Distribution and Patterns | Linear Trend | $5x + 2$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📈|
+|[📊]()| | | | OffsetModel |👌|👌|👌|👌|❌|👌|👌|👌📈|
+|[📊]()| |  | $-5x + 2$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📉|
+|[📊]()| | | | OffsetModel |👌|👌|👌|👌|❌|👌|👌|👌📈|
+|[📊]()| | Exponential Growth/Decay | $2e^{0.5x}$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📉|
+|[📊]()| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊]()| |  | $2e^{0.5(2\pi - x)}$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📉|
+|[📊]()| | | | OffsetModel |❌|👌|👌|👌|❗|👌|❗|❗📈|
+|[📊]()| | Quadratic Trend | $x^2$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📈|
+|[📊]()| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊]()| |  | $-x^2$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📉|
+|[📊]()| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊]()| | Logarithmic Trend | $10 + 5\ln(x+1)$ | AutoReg |❗|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊]()| | | | OffsetModel |✔️|👌|👌|👌|❗|👌|👌|👌📈|
+|[📊]()| |  | $10 - 5\ln(x+1)$ | AutoReg |❗|👌|👌|👌|🤬|👌|💀|💀📉|
+|[📊]()| | | | OffsetModel |✔️|👌|👌|👌|❗|👌|❗|❌📈|
+|[📊]()| | Sigmoidal/Logistic Trend | $\frac{10}{1 + e^{-x + 5}}$ | AutoReg |🛑|💀|💀|💀|🤬|👌|❗|❗📈|
+|[📊]()| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊]()| |  | $-\frac{10}{1 + e^{-x + 5}}$ | AutoReg |🛑|💀|💀|💀|🤬|👌|❗|❗📉|
+|[📊]()| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊]()| | Seasonality | $20 \cdot \cos(4x) + 50$ | AutoReg |🛑|❗|☠|❌|🤬|👌|❌|❗📉|
+|[📊]()| | | | OffsetModel |👌|👌|👌|👌|✔️|👌|👌|👌📈|
+|[📊]()| | Outliers | $\begin{cases} \sin(x) & \text{if } \vert\sin(x)\vert \leq 0.99 \\ 1000\sin(x) & \text{if } \vert\sin(x)\vert > 0.99 \end{cases}$ | AutoReg |🛑|❗|☠|❗|🤬|☠|☠|☠📉|
+|[📊]()| | | | OffsetModel |👌|👌|❌|👌|✔️|☠|☠|☠📈|
+|[📊]()| | Repeated Patterns | $(x \mod 5) + 1$ | AutoReg |🛑|💀|💀|💀|❗|👌|💀|💀📈|
+|[📊]()| | | | OffsetModel |👌|👌|👌|👌|👌|👌|👌|👌📈|
+|[📊]()| Nature of Errors | Systematic Overestimation | $5x + 2$ | OffsetModel 1% |💯|👌|👌|👌|👌|👌|👌|👌📈|
+|[📊]()| | | | OffsetModel 10% |👌|👌|👌|👌|👌|👌|👌|👌📈|
+|[📊]()| | Systematic Underestimation | $5x + 2$ | OffsetModel 1% |💯|👌|👌|👌|👌|👌|👌|👌📈|
+|[📊]()| | | | OffsetModel 10% |👌|👌|👌|👌|👌|👌|👌|👌📈|
+|[📊]()| | Random Errors | $5x + 2$ | RandomOffsetModel 1% |💯|👌|👌|👌|👌|👌|👌|👌📈|
+|[📊]()| | | | RandomOffsetModel 10% |👌|👌|👌|👌|👌|👌|👌|👌📈|
 
 https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s1_cos_ar.html
 https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s1_cos_om.html
@@ -222,14 +227,30 @@ https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_
 https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_diff_cos_om5000.html
 https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_diff_sin_om500.html
 https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_diff_sin_om5000.html
-
-
-
-
-
-
-
-
-
-
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_lin-trend_inc_ar.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_lin-trend_inc_om.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_lin-trend_dec_ar.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_lin-trend_dec_om.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_exp-trend_inc_ar.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_exp-trend_inc_om.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_exp-trend_dec_ar.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_exp-trend_dec_om.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_quad-trend_inc_ar.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_quad-trend_inc_om.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_quad-trend_dec_ar.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_quad-trend_dec_om.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_log-trend_inc_ar.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_log-trend_inc_om.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_log-trend_dec_ar.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_log-trend_dec_om.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_inc_ar.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_inc_om.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_dec_ar.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_dec_om.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_seasonality_ar.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_seasonality_om.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_outliers_ar.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_outliers_om.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_repeated_ar.html
+https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_repeated_om.html
 
