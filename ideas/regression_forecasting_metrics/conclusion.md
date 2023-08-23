@@ -98,161 +98,85 @@
 
 | Plot | Based on | Variant | Dataset | Model | R2 | MAE | MSE | RMSE | MASE | MAPE | sMAPE | MBDev |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|
-|[📊]()| Test Size | Small=1 | $\cos(x)$ | AutoReg |🙅‍♂️|👌|👌|👌|🤬|👌|👌|👌📈|
-|[📊]()| | | | OffsetModel |🙅‍♂️|👌|👌|👌|🤬|👌|👌|👌📈|
-|[📊]()| | | $\sin(x)$ | AutoReg |🙅‍♂️|👌|👌|👌|🤬|☠|☠|☠📉|
-|[📊]()| | | | OffsetModel |🙅‍♂️|👌|👌|👌|🤬|☠|☠|☠📈|
-|[📊]()| | Small=2 | $\cos(x)$ | AutoReg |🛑|👌|👌|👌|🤬|👌|👌|👌📈|
-|[📊]()| | | | OffsetModel |🛑|👌|👌|👌|🤬|👌|👌|👌📈|
-|[📊]()| | | $\sin(x)$ | AutoReg |🛑|👌|👌|👌|🤬|☠|☠|☠📉|
-|[📊]()| | | | OffsetModel |🛑|👌|👌|👌|🤬|☠|☠|☠📈|
-|[📊]()| | Mid | $\cos(x)$ | AutoReg |🛑|👌|👌|👌|🤬|👌|👌|👌📈|
-|[📊]()| | | | OffsetModel |🛑|👌|👌|👌|🤬|👌|👌|👌📈|
-|[📊]()| | | $\sin(x)$ | AutoReg |🛑|👌|👌|👌|🤬|☠|💀|☠📉|
-|[📊]()| | | | OffsetModel |🛑|👌|👌|👌|🤬|☠|☠|☠📈|
-|[📊]()| | Large | $\cos(x)$ | AutoReg |🛑|❗|✔️|❌|🤬|👌|❌|💀📈|
-|[📊]()| | | | OffsetModel |❗|👌|👌|👌|🤬|👌|👌|👌📈|
-|[📊]()| | | $\sin(x)$ | AutoReg |🛑|❌|❗|❌|🤬|☠|💀|☠📉|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|🤬|☠|❗|☠📈|
-|[📊]()| Number Nature | Non-zero Real Numbers | $10 \cdot \cos(x) + 1$ | AutoReg |🛑|☠|☠|☠|🤬|👌|☠|☠📈|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|❗|👌|✔️|👌📈|
-|[📊]()| | | $10 \cdot \sin(x) + 1$ | AutoReg |🛑|💀|☠|💀|🤬|❗|💀|☠📉|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|✔️|👌|❗|👌📈|
-|[📊]()| | Real Numbers | $\text{int}(10 \cdot \cos(x))$ | AutoReg |🛑|💀|☠|☠|🤬|☠|☠|☠📈|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|❗|☠|❌|☠📈|
-|[📊]()| | | $\text{int}(10 \cdot \sin(x))$ | AutoReg |🛑|💀|☠|💀|🤬|☠|💀|☠📉|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|✔️|☠|❗|☠📈|
-|[📊]()| | Negative Numbers Only | $10 \cdot \cos(x) - 11$ | AutoReg |🛑|☠|☠|☠|🤬|❗|☠|☠📈|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|❗|👌|✔️|👌📈|
-|[📊]()| | | $10 \cdot \sin(x) - 11$ | AutoReg |🛑|💀|☠|💀|🤬|👌|💀|💀📉|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|✔️|👌|👌|👌📈|
-|[📊]()| | Positive Numbers Only | $10 \cdot \cos(x) + 11$ | AutoReg |🛑|☠|☠|☠|🤬|👌|💀|☠📈|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|❗|👌|👌|👌📈|
-|[📊]()| | | $10 \cdot \sin(x) + 11$ | AutoReg |🛑|💀|☠|💀|🤬|👌|💀|💀📉|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|✔️|👌|✔️|✔️📈|
-|[📊]()| | Very Small Numbers | $1 \times 10^{-6} \cdot \cos(x)$ | AutoReg |🛑|☠|👌|☠|🤬|👌|☠|☠📈|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|❗|👌|❗|👌📈|
-|[📊]()| | | $1 \times 10^{-6} \cdot \sin(x)$ | AutoReg |🛑|💀|👌|💀|🤬|☠|💀|☠📉|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|✔️|☠|❗|☠📈|
-|[📊]()| | Very Large Numbers | $1 \times 10^{11} \cdot \cos(x)$ | AutoReg |🛑|☠|☠|☠|🤬|👌|☠|☠📈|
-|[📊]()| | | | OffsetModel |👌|👌|☠|👌|❗|👌|❗|👌📈|
-|[📊]()| | Very Large Numbers | $1 \times 10^{11} \cdot \sin(x)$ | AutoReg |🛑|💀|☠|💀|🤬|☠|💀|☠📉|
-|[📊]()| | | | OffsetModel |👌|👌|☠|👌|✔️|☠|❗|☠📈|
-|[📊]()| Magnitude | Same Magnitude for $y \text{ and } \hat{y}$ | $100 \cdot \cos(x) + 200$ | OffsetModel 1% |👌|👌|👌|👌|❗|👌|👌|👌📈|
-|[📊]()| | | | OffsetModel 10% |❌|✔️|☠|✔️|🤬|👌|✔️|✔️📈|
-|[📊]()|  |  | $100 \cdot \sin(x) + 200$ | OffsetModel 1% |👌|👌|👌|👌|✔️|👌|👌|👌📈|
-|[📊]()| | | | OffsetModel 10% |💀|❗|☠|❗|🤬|👌|❗|❗📈|
-|[📊]()| | Different Magnitude for $y \text{ and } \hat{y}$ | $10 \cdot \cos(x) + 21$ | OffsetModel 500% |🛑|☠|☠|☠|🤬|👌|☠|☠📈|
-|[📊]()| | | | OffsetModel 5000% |🛑|☠|☠|☠|🤬|💀|☠|☠📈|
-|[📊]()| |  | $10 \cdot \sin(x) + 21$ | OffsetModel 500% |🛑|☠|☠|☠|🤬|✔️|☠|☠📈|
-|[📊]()| | | | OffsetModel 5000% |🛑|☠|☠|☠|🤬|💀|☠|☠📈|
-|[📊]()| Data Distribution and Patterns | Linear Trend | $5x + 2$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📈|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|❌|👌|👌|👌📈|
-|[📊]()| |  | $-5x + 2$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📉|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|❌|👌|👌|👌📈|
-|[📊]()| | Exponential Growth/Decay | $2e^{0.5x}$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📉|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
-|[📊]()| |  | $2e^{0.5(2\pi - x)}$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📉|
-|[📊]()| | | | OffsetModel |❌|👌|👌|👌|❗|👌|❗|❗📈|
-|[📊]()| | Quadratic Trend | $x^2$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📈|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
-|[📊]()| |  | $-x^2$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📉|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
-|[📊]()| | Logarithmic Trend | $10 + 5\ln(x+1)$ | AutoReg |❗|👌|👌|👌|🤬|👌|👌|👌📈|
-|[📊]()| | | | OffsetModel |✔️|👌|👌|👌|❗|👌|👌|👌📈|
-|[📊]()| |  | $10 - 5\ln(x+1)$ | AutoReg |❗|👌|👌|👌|🤬|👌|💀|💀📉|
-|[📊]()| | | | OffsetModel |✔️|👌|👌|👌|❗|👌|❗|❌📈|
-|[📊]()| | Sigmoidal/Logistic Trend | $\frac{10}{1 + e^{-x + 5}}$ | AutoReg |🛑|💀|💀|💀|🤬|👌|❗|❗📈|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
-|[📊]()| |  | $-\frac{10}{1 + e^{-x + 5}}$ | AutoReg |🛑|💀|💀|💀|🤬|👌|❗|❗📉|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
-|[📊]()| | Seasonality | $20 \cdot \cos(4x) + 50$ | AutoReg |🛑|❗|☠|❌|🤬|👌|❌|❗📉|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|✔️|👌|👌|👌📈|
-|[📊]()| | Outliers | $\begin{cases} \sin(x) & \text{if } \vert\sin(x)\vert \leq 0.99 \\ 1000\sin(x) & \text{if } \vert\sin(x)\vert > 0.99 \end{cases}$ | AutoReg |🛑|❗|☠|❗|🤬|☠|☠|☠📉|
-|[📊]()| | Outliers | ![outliers math func](https://raw.githubusercontent.com/ranggakd/DAIly/main/ideas/regression_forecasting_metrics/assets/outliers_formula.png) | AutoReg |🛑|❗|☠|❗|🤬|☠|☠|☠📉|
-|[📊]()| | Outliers | $$\begin{cases} \sin(x) & \text{if } \vert\sin(x)\vert \leq 0.99 \\ 1000\sin(x) & \text{if } \vert\sin(x)\vert > 0.99 \end{cases}$$ | AutoReg |🛑|❗|☠|❗|🤬|☠|☠|☠📉|
-|[📊]()| | | | OffsetModel |👌|👌|❌|👌|✔️|☠|☠|☠📈|
-|[📊]()| | Repeated Patterns | $(x \mod 5) + 1$ | AutoReg |🛑|💀|💀|💀|❗|👌|💀|💀📈|
-|[📊]()| | | | OffsetModel |👌|👌|👌|👌|👌|👌|👌|👌📈|
-|[📊]()| Nature of Errors | Systematic Overestimation | $5x + 2$ | OffsetModel 1% |💯|👌|👌|👌|👌|👌|👌|👌📈|
-|[📊]()| | | | OffsetModel 10% |👌|👌|👌|👌|👌|👌|👌|👌📈|
-|[📊]()| | Systematic Underestimation | $5x + 2$ | OffsetModel 1% |💯|👌|👌|👌|👌|👌|👌|👌📈|
-|[📊]()| | | | OffsetModel 10% |👌|👌|👌|👌|👌|👌|👌|👌📈|
-|[📊]()| | Random Errors | $5x + 2$ | RandomOffsetModel 1% |💯|👌|👌|👌|👌|👌|👌|👌📈|
-|[📊]()| | | | RandomOffsetModel 10% |👌|👌|👌|👌|👌|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s1_cos_ar.html)| Test Size | Small=1 | $\cos(x)$ | AutoReg |🙅‍♂️|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s1_cos_om.html)| | | | OffsetModel |🙅‍♂️|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s1_sin_ar.html)| | | $\sin(x)$ | AutoReg |🙅‍♂️|👌|👌|👌|🤬|☠|☠|☠📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s1_sin_om.html)| | | | OffsetModel |🙅‍♂️|👌|👌|👌|🤬|☠|☠|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s2_cos_ar.html)| | Small=2 | $\cos(x)$ | AutoReg |🛑|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s2_cos_om.html)| | | | OffsetModel |🛑|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s2_sin_ar.html)| | | $\sin(x)$ | AutoReg |🛑|👌|👌|👌|🤬|☠|☠|☠📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s2_sin_om.html)| | | | OffsetModel |🛑|👌|👌|👌|🤬|☠|☠|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_mid_cos_ar.html)| | Mid | $\cos(x)$ | AutoReg |🛑|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_mid_cos_om.html)| | | | OffsetModel |🛑|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_mid_sin_ar.html)| | | $\sin(x)$ | AutoReg |🛑|👌|👌|👌|🤬|☠|💀|☠📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_mid_sin_om.html)| | | | OffsetModel |🛑|👌|👌|👌|🤬|☠|☠|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_l_cos_ar.html)| | Large | $\cos(x)$ | AutoReg |🛑|❗|✔️|❌|🤬|👌|❌|💀📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_l_cos_om.html)| | | | OffsetModel |❗|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_l_sin_ar.html)| | | $\sin(x)$ | AutoReg |🛑|❌|❗|❌|🤬|☠|💀|☠📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_l_sin_om.html)| | | | OffsetModel |👌|👌|👌|👌|🤬|☠|❗|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_non-zero_cos_ar.html)| Number Nature | Non-zero Real Numbers | $10 \cdot \cos(x) + 1$ | AutoReg |🛑|☠|☠|☠|🤬|👌|☠|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_non-zero_cos_om.html)| | | | OffsetModel |👌|👌|👌|👌|❗|👌|✔️|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_non-zero_sin_ar.html)| | | $10 \cdot \sin(x) + 1$ | AutoReg |🛑|💀|☠|💀|🤬|❗|💀|☠📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_non-zero_sin_om.html)| | | | OffsetModel |👌|👌|👌|👌|✔️|👌|❗|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_with-zero_cos_ar.html)| | Real Numbers | $\text{int}(10 \cdot \cos(x))$ | AutoReg |🛑|💀|☠|☠|🤬|☠|☠|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_with-zero_cos_om.html)| | | | OffsetModel |👌|👌|👌|👌|❗|☠|❌|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_with-zero_sin_ar.html)| | | $\text{int}(10 \cdot \sin(x))$ | AutoReg |🛑|💀|☠|💀|🤬|☠|💀|☠📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_with-zero_sin_om.html)| | | | OffsetModel |👌|👌|👌|👌|✔️|☠|❗|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_negative_cos_ar.html)| | Negative Numbers Only | $10 \cdot \cos(x) - 11$ | AutoReg |🛑|☠|☠|☠|🤬|❗|☠|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_negative_cos_om.html)| | | | OffsetModel |👌|👌|👌|👌|❗|👌|✔️|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_negative_sin_ar.html)| | | $10 \cdot \sin(x) - 11$ | AutoReg |🛑|💀|☠|💀|🤬|👌|💀|💀📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_negative_sin_om.html)| | | | OffsetModel |👌|👌|👌|👌|✔️|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_positive_cos_ar.html)| | Positive Numbers Only | $10 \cdot \cos(x) + 11$ | AutoReg |🛑|☠|☠|☠|🤬|👌|💀|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_positive_cos_om.html)| | | | OffsetModel |👌|👌|👌|👌|❗|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_positive_sin_ar.html)| | | $10 \cdot \sin(x) + 11$ | AutoReg |🛑|💀|☠|💀|🤬|👌|💀|💀📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_positive_sin_om.html)| | | | OffsetModel |👌|👌|👌|👌|✔️|👌|✔️|✔️📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vsmall_cos_ar.html)| | Very Small Numbers | $1 \times 10^{-6} \cdot \cos(x)$ | AutoReg |🛑|☠|👌|☠|🤬|👌|☠|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vsmall_cos_om.html)| | | | OffsetModel |👌|👌|👌|👌|❗|👌|❗|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vsmall_sin_ar.html)| | | $1 \times 10^{-6} \cdot \sin(x)$ | AutoReg |🛑|💀|👌|💀|🤬|☠|💀|☠📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vsmall_sin_om.html)| | | | OffsetModel |👌|👌|👌|👌|✔️|☠|❗|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vlarge_cos_ar.html)| | Very Large Numbers | $1 \times 10^{11} \cdot \cos(x)$ | AutoReg |🛑|☠|☠|☠|🤬|👌|☠|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vlarge_cos_om.html)| | | | OffsetModel |👌|👌|☠|👌|❗|👌|❗|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vlarge_sin_ar.html)| | Very Large Numbers | $1 \times 10^{11} \cdot \sin(x)$ | AutoReg |🛑|💀|☠|💀|🤬|☠|💀|☠📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vlarge_sin_om.html)| | | | OffsetModel |👌|👌|☠|👌|✔️|☠|❗|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_same_cos_om1.html)| Magnitude | Same Magnitude for $y \text{ and } \hat{y}$ | $100 \cdot \cos(x) + 200$ | OffsetModel 1% |👌|👌|👌|👌|❗|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_same_cos_om10.html)| | | | OffsetModel 10% |❌|✔️|☠|✔️|🤬|👌|✔️|✔️📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_same_sin_om1.html)|  |  | $100 \cdot \sin(x) + 200$ | OffsetModel 1% |👌|👌|👌|👌|✔️|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_same_sin_om10.html)| | | | OffsetModel 10% |💀|❗|☠|❗|🤬|👌|❗|❗📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_diff_cos_om500.html)| | Different Magnitude for $y \text{ and } \hat{y}$ | $10 \cdot \cos(x) + 21$ | OffsetModel 500% |🛑|☠|☠|☠|🤬|👌|☠|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_diff_cos_om5000.html)| | | | OffsetModel 5000% |🛑|☠|☠|☠|🤬|💀|☠|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_diff_sin_om500.html)| |  | $10 \cdot \sin(x) + 21$ | OffsetModel 500% |🛑|☠|☠|☠|🤬|✔️|☠|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_diff_sin_om5000.html)| | | | OffsetModel 5000% |🛑|☠|☠|☠|🤬|💀|☠|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_lin-trend_inc_ar.html)| Data Distribution and Patterns | Linear Trend | $5x + 2$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_lin-trend_inc_om.html)| | | | OffsetModel |👌|👌|👌|👌|❌|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_lin-trend_dec_ar.html)| |  | $-5x + 2$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_lin-trend_dec_om.html)| | | | OffsetModel |👌|👌|👌|👌|❌|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_exp-trend_inc_ar.html)| | Exponential Growth/Decay | $2e^{0.5x}$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_exp-trend_inc_om.html)| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_exp-trend_dec_ar.html)| |  | $2e^{0.5(2\pi - x)}$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_exp-trend_dec_om.html)| | | | OffsetModel |❌|👌|👌|👌|❗|👌|❗|❗📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_quad-trend_inc_ar.html)| | Quadratic Trend | $x^2$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_quad-trend_inc_om.html)| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_quad-trend_dec_ar.html)| |  | $-x^2$ | AutoReg |💯|👌|👌|👌|👌|👌|👌|👌📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_quad-trend_dec_om.html)| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_log-trend_inc_ar.html)| | Logarithmic Trend | $10 + 5\ln(x+1)$ | AutoReg |❗|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_log-trend_inc_om.html)| | | | OffsetModel |✔️|👌|👌|👌|❗|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_log-trend_dec_ar.html)| |  | $10 - 5\ln(x+1)$ | AutoReg |❗|👌|👌|👌|🤬|👌|💀|💀📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_log-trend_dec_om.html)| | | | OffsetModel |✔️|👌|👌|👌|❗|👌|❗|❌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_inc_ar.html)| | Sigmoidal/Logistic Trend | $\frac{10}{1 + e^{-x + 5}}$ | AutoReg |🛑|💀|💀|💀|🤬|👌|❗|❗📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_inc_om.html)| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_dec_ar.html)| |  | $-\frac{10}{1 + e^{-x + 5}}$ | AutoReg |🛑|💀|💀|💀|🤬|👌|❗|❗📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_dec_om.html)| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_seasonality_ar.html)| | Seasonality | $20 \cdot \cos(4x) + 50$ | AutoReg |🛑|❗|☠|❌|🤬|👌|❌|❗📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_seasonality_om.html)| | | | OffsetModel |👌|👌|👌|👌|✔️|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_outliers_ar.html)| | Outliers | ![outliers math func](https://raw.githubusercontent.com/ranggakd/DAIly/main/ideas/regression_forecasting_metrics/assets/outliers_formula.png) | AutoReg |🛑|❗|☠|❗|🤬|☠|☠|☠📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_outliers_om.html)| | | | OffsetModel |👌|👌|❌|👌|✔️|☠|☠|☠📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_repeated_ar.html)| | Repeated Patterns | $(x \mod 5) + 1$ | AutoReg |🛑|💀|💀|💀|❗|👌|💀|💀📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_repeated_om.html)| | | | OffsetModel |👌|👌|👌|👌|👌|👌|👌|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/err_overestimation_om1.html)| Nature of Errors | Systematic Overestimation | $10 \cdot \cos(x)$ | OffsetModel 1% |👌|👌|👌|👌|❗|👌|❗|👌📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/err_overestimation_om10.html)| | | | OffsetModel 10% |❌|✔️|❗|✔️|🤬|👌|💀|❗📈|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/err_underestimation_om1.html)| | Systematic Underestimation | $10 \cdot \cos(x)$ | OffsetModel 1% |👌|👌|👌|👌|❗|👌|❗|👌📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/err_underestimation_om10.html)| | | | OffsetModel 10% |❌|✔️|❗|❗|🤬|👌|💀|❗📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/err_random_om1.html)| | Random Errors | $10 \cdot \cos(x)$ | RandomOffsetModel 1% |👌|👌|👌|👌|❗|👌|❗|✔️📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/err_random_om10.html)| | | | RandomOffsetModel 10% |❌|✔️|❗|✔️|🤬|👌|💀|❌📈|
 
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s1_cos_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s1_cos_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s1_sin_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s1_sin_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s2_cos_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s2_cos_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s2_sin_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_s2_sin_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_mid_cos_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_mid_cos_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_mid_sin_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_mid_sin_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_l_cos_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_l_cos_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_l_sin_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/testsize_l_sin_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_non-zero_cos_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_non-zero_cos_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_non-zero_sin_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_non-zero_sin_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_with-zero_cos_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_with-zero_cos_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_with-zero_sin_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_with-zero_sin_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_negative_cos_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_negative_cos_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_negative_sin_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_negative_sin_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_positive_cos_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_positive_cos_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_positive_sin_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_positive_sin_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vsmall_cos_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vsmall_cos_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vsmall_sin_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vsmall_sin_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vlarge_cos_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vlarge_cos_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vlarge_sin_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vlarge_sin_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_same_cos_om1.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_same_cos_om10.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_same_sin_om1.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_same_sin_om10.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_diff_cos_om500.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_diff_cos_om5000.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_diff_sin_om500.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_diff_sin_om5000.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_lin-trend_inc_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_lin-trend_inc_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_lin-trend_dec_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_lin-trend_dec_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_exp-trend_inc_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_exp-trend_inc_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_exp-trend_dec_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_exp-trend_dec_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_quad-trend_inc_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_quad-trend_inc_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_quad-trend_dec_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_quad-trend_dec_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_log-trend_inc_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_log-trend_inc_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_log-trend_dec_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_log-trend_dec_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_inc_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_inc_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_dec_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_dec_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_seasonality_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_seasonality_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_outliers_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_outliers_om.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_repeated_ar.html
-https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_repeated_om.html
-
+<!-- $\begin{cases} \sin(x) & \text{if } \vert\sin(x)\vert \leq 0.99 \\ 1000\sin(x) & \text{if } \vert\sin(x)\vert > 0.99 \end{cases}$ -->
