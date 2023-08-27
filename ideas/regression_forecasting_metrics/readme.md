@@ -1,5 +1,7 @@
 ## Summary
 
+[Link to the jupyter notebook](https://github.com/ranggakd/DAIly/blob/main/ideas/regression_forecasting_metrics/Metrics_Exploration_.ipynb)
+
 <details>
     <summary>
 <h3>Boundaries</h3>
