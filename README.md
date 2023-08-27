@@ -12,6 +12,10 @@ This directory might contain notes or outlines of potential data analysis or AI 
 
 Redefining the average rating system by factoring in people's feedback
 
+### [Regression and Forecasting Metrics Exploration](ideas/regression_forecasting_metrics/Metrics_Exploration.ipynb)
+
+Navigating the maze of regression and forecasting metrics to understand their behavior and implications
+
 [back to ⬆](#daily)
 
 
