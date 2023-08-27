@@ -80,8 +80,8 @@
 
 | Metric | Emoji |
 |--------|-------|
-| OVERESTIMATION | 📈 |
-| UNDERESTIMATION | 📉 |
+| Overestimation | 📈 |
+| Underestimation | 📉 |
 | Nan / None | 🙅‍♂️ |
 
 ### Summary Table
