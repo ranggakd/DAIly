@@ -84,6 +84,51 @@
 
 ### Summary Table
 
+```mermaid
+---
+title: Metrics Exploration
+---
+graph LR
+    Metrics([Metrics Results])
+    Test[Based on test size]
+    TestS[Small]
+    TestS1[1 data point]
+    TestS2[2 data point]
+    TestM[Mid]
+    TestL[Large]
+    Num[Based on number nature]
+    NumNRN[Non-zero real numbers]
+    NumRN[Real numbers]
+    NumNNO[Negative numbers only]
+    NumPNO[Positive numbers only]
+    NumVSN[Very small numbers]
+    NumVLN[Very large numbers]
+    Mag[Based on magnitude]
+    MagS[Same magnitude for y and yhat]
+    MagD[Different magnitude for y and yhat]
+    DDP[Based on data distribution and patterns]
+    DDPL[Linear trend]
+    DDPE[Exponential growth/decay]
+    DDPQ[Quadratic trend]
+    DDPLo[Logarithmic trend]
+    DDPS[Sigmoidal/Logistic trend]
+    DDPSe[Seasonality]
+    DDPO[Outliers]
+    DDPR[Repeated patterns]
+    Err[Based on nature of errors]
+    ErrO[Systematic overestimation]
+    ErrU[Systematic underestimation]
+    ErrR[Random Errors]
+
+    Metrics --- Test & Num & Mag & DDP & Err
+    Test --- TestS & TestM & TestL
+    TestS --- TestS1 & TestS2
+    Num --- NumNRN & NumRN & NumNNO & NumPNO & NumVSN & NumVLN
+    Mag --- MagS & MagD
+    DDP --- DDPL & DDPE & DDPQ & DDPLo & DDPS & DDPSe & DDPO & DDPR
+    Err --- ErrO & ErrU & ErrR
+```
+
 > **Disclaimer:** 
 >
 > 1. Metrics are calculated using `sklearn.metrics`, with the exception of `MASE`, `sMAPE`, and `MBD`. Results may vary based on different implementations.
