@@ -60,7 +60,7 @@
 | Worse Than Naive Forecast Model | $x > 1$ |
 </details>
 
-### Severity Emojis:
+### Severity Emojis
 
 | Metric | Emoji |
 |--------|-------|
@@ -76,7 +76,7 @@
 | Equivalent to Naive Model | ⚖ |
 | Worse Than Naive Forecast Model | 🤬 |
 
-### Directional Emojis:
+### Directional Emojis
 
 | Metric | Emoji |
 |--------|-------|
