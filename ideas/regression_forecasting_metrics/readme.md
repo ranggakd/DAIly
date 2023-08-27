@@ -136,7 +136,7 @@
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vsmall_sin_om.html)| | | | OffsetModel |👌|👌|👌|👌|✔️|☠|❗|☠📈|
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vlarge_cos_ar.html)| | Very Large Numbers | $1 \times 10^{11} \cdot \cos(x)$ | AutoReg |🛑|☠|☠|☠|🤬|👌|☠|☠📈|
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vlarge_cos_om.html)| | | | OffsetModel |👌|👌|☠|👌|❗|👌|❗|👌📈|
-|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vlarge_sin_ar.html)| | Very Large Numbers | $1 \times 10^{11} \cdot \sin(x)$ | AutoReg |🛑|💀|☠|💀|🤬|☠|💀|☠📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vlarge_sin_ar.html)| | | $1 \times 10^{11} \cdot \sin(x)$ | AutoReg |🛑|💀|☠|💀|🤬|☠|💀|☠📉|
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/num_vlarge_sin_om.html)| | | | OffsetModel |👌|👌|☠|👌|✔️|☠|❗|☠📈|
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_same_cos_om1.html)| Magnitude | Same Magnitude for $y \text{ and } \hat{y}$ | $100 \cdot \cos(x) + 200$ | OffsetModel 1% |👌|👌|👌|👌|❗|👌|👌|👌📈|
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/mag_same_cos_om10.html)| | | | OffsetModel 10% |❌|✔️|☠|✔️|🤬|👌|✔️|✔️📈|
