@@ -1,6 +1,6 @@
 ## Summary
 
-[Link to the jupyter notebook](https://github.com/ranggakd/DAIly/blob/main/ideas/regression_forecasting_metrics/Metrics_Exploration_.ipynb)
+[Link to the jupyter notebook](https://github.com/ranggakd/DAIly/blob/main/ideas/regression_forecasting_metrics/Metrics_Exploration.ipynb)
 
 <details>
     <summary>
