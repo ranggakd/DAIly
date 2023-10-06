@@ -36,3 +36,13 @@
 *.xlm
 *.xlw
 *.xlc
+
+# CatBoost
+catboost_info/
+
+# LightGBM
+LightGBM_model.txt
+LightGBM_config.conf
+
+# XGBoost
+xgboost-model
