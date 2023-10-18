@@ -38,11 +38,33 @@
 *.xlc
 
 # CatBoost
-catboost_info/
+**catboost_info/
 
 # LightGBM
-LightGBM_model.txt
-LightGBM_config.conf
+**LightGBM_model.txt
+**LightGBM_config.conf
 
 # XGBoost
-xgboost-model
+**xgboost-model
+
+# Mercury
+**/celery*.sqlite
+**/celerybeat-schedule.*
+
+# Django logs
+**/django-errors.log
+
+# Django specific
+**/*.log
+**/*.pot
+**/*.pyc
+**/__pycache__/
+**/local_settings.py
+**/db.sqlite3
+**/db.sqlite3-journal
+**/media
+
+# Celery stuff
+**/celerybeat.pid
+**/celerycam.pid
+**/celeryd.pid
