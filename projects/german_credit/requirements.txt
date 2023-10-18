@@ -1,0 +1,8 @@
+requests
+pandas
+mercury
+ptitprince
+scipy
+matplotlib
+category_encoders
+sklearn
