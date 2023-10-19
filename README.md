@@ -44,4 +44,8 @@ This directory might contain completed or ongoing data analysis or AI projects t
 
 Leveraging GraphQL API over web scraping: a backend approach
 
+### [German Credit EDA with Mercury Presentation]('https://ranggakd.runmercury.com/app/german_credit_eda_with_mercury_presentation')
+
+Mercury interactive presentation: German Credit EDA and Leave-One-Out Encoding effects explanation
+
 [back to ⬆](#daily)
