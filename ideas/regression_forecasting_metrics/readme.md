@@ -136,7 +136,7 @@ graph LR
 > 1. Metrics are calculated using `sklearn.metrics`, with the exception of `MASE`, `sMAPE`, and `MBD`. Results may vary based on different implementations.
 > 2. The datasets for these metrics were synthesized using mathematical formulas like sine and cosine for controlled predictability.
 > 3. The controlled models used are `statsmodels.tsa.ar_model.AutoReg` and `OffsetModel`. 
-> 4. `AutoReg` was chosen for its fundamental nature in *time series forecasting*, while `OffsetModel` mimics good performance by shifting test data.
+> 4. `AutoReg` was chosen for its fundamental nature in *time series forecasting*, while `OffsetModel` mimics good performance by shifting test data positively.
 > 5. This experiment focuses on **forecasting problems**, highlighting that all forecasting problems are regressions, but not vice-versa. *Click 📊 for the plot*.
 > 6. When using `MBD` with negative or mixed observed values, interpret results with caution. **The metric's sign** can be influenced by both **the bias direction** and **the sign of observed values**.
 > 7. This experiment is not intended to serve as a rule of thumb or a best practice. Instead, it offers a glimpse into how different metrics behave on controlled models and datasets to foster a deeper understanding.
@@ -221,8 +221,8 @@ graph LR
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_repeated_om.html)| | | | OffsetModel |👌|👌|👌|👌|👌|👌|👌|👌📈|
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/err_overestimation_om1.html)| Nature of Errors | Systematic Overestimation | $10 \cdot \cos(x)$ | OffsetModel 1% |👌|👌|👌|👌|❗|👌|❗|👌📈|
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/err_overestimation_om10.html)| | | | OffsetModel 10% |❌|✔️|❗|✔️|🤬|👌|💀|❗📈|
-|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/err_underestimation_om1.html)| | Systematic Underestimation | $10 \cdot \cos(x)$ | OffsetModel 1% |👌|👌|👌|👌|❗|👌|❗|👌📉|
-|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/err_underestimation_om10.html)| | | | OffsetModel 10% |❌|✔️|❗|❗|🤬|👌|💀|❗📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/err_underestimation_om1.html)| | Systematic Underestimation | $10 \cdot \cos(x)$ | NegOffsetModel 1% |👌|👌|👌|👌|❗|👌|❗|👌📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/err_underestimation_om10.html)| | | | NegOffsetModel 10% |❌|✔️|❗|❗|🤬|👌|💀|❗📉|
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/err_random_om1.html)| | Random Errors | $10 \cdot \cos(x)$ | RandomOffsetModel 1% |👌|👌|👌|👌|❗|👌|❗|✔️📉|
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/err_random_om10.html)| | | | RandomOffsetModel 10% |❌|✔️|❗|✔️|🤬|👌|💀|❌📈|
 
