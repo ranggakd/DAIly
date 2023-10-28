@@ -213,7 +213,7 @@ graph LR
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_inc_om.html)| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_dec_ar.html)| |  | $-\frac{10}{1 + e^{-x + 5}}$ | AutoReg |🛑|💀|💀|💀|🤬|👌|❗|❗📉|
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_sigm-trend_dec_om.html)| | | | OffsetModel |👌|👌|👌|👌|🤬|👌|👌|👌📈|
-|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_seasonality_ar.html)| | Seasonality | $20 \cdot \cos(4x) + 50$ | AutoReg |🛑|❗|☠|❌|🤬|👌|❌|❗📉|
+|[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_seasonality_ar.html)| | Seasonality | $20 \cdot \sin(4x) + 50$ | AutoReg |🛑|❗|☠|❌|🤬|👌|❌|❗📉|
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_seasonality_om.html)| | | | OffsetModel |👌|👌|👌|👌|✔️|👌|👌|👌📈|
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_outliers_ar.html)| | Outliers | ![outliers math func](https://raw.githubusercontent.com/ranggakd/DAIly/main/ideas/regression_forecasting_metrics/assets/outliers_formula.png) | AutoReg |🛑|❗|☠|❗|🤬|☠|☠|☠📉|
 |[📊](https://ranggakd.github.io/DAIly/ideas/regression_forecasting_metrics/plots/ddp_outliers_om.html)| | | | OffsetModel |👌|👌|❌|👌|✔️|☠|☠|☠📈|
