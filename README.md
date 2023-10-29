@@ -16,6 +16,10 @@ Redefining the average rating system by factoring in people's feedback
 
 Navigating the maze of regression and forecasting metrics to understand their behavior and implications
 
+### [Metrics Exploration with Mercury Dashboard](https://ranggakd.runmercury.com/app/metrics_exploration_with_mercury)
+
+Mercury dashboard: Regression/forecasting metric exploration based on test size to nature errors
+
 [back to ⬆](#daily)
 
 
