@@ -5,4 +5,4 @@ ptitprince
 scipy
 matplotlib
 category_encoders
-sklearn
+scikit-klearn
