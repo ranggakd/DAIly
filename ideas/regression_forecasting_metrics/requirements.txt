@@ -5,7 +5,6 @@ ptitprince              # German Credit EDA Slides
 scipy                   # German Credit EDA Slides
 matplotlib              # German Credit EDA Slides
 category_encoders       # German Credit EDA Slides
-sklearn                 # Regression-Forecasting Dashboard
 numpy                   # Regression-Forecasting Dashboard
 statsmodels             # Regression-Forecasting Dashboard
 scikit-learn            # Regression-Forecasting Dashboard
